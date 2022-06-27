@@ -114,9 +114,9 @@ function _readFC4(data, next) {
     var length = data.readUInt8(2);
     var contents = [];
     
-    if (data.length > 512) {
-       length = 1024;
-    }
+//     if (data.length > 512) {
+//        length = 1024;
+//     }
 
     for (var i = 0; i < length; i += 2) {
         var reg = data.readUInt16BE(i + 3);
