@@ -8,7 +8,7 @@ var modbusSerialDebug = require("debug")("modbus-serial");
 /* TODO: const should be set once, maybe */
 var EXCEPTION_LENGTH = 5;
 var MIN_DATA_LENGTH = 6;
-var MAX_BUFFER_LENGTH = 1029;
+var MAX_BUFFER_LENGTH = 5000;
 var CRC_LENGTH = 2;
 var READ_DEVICE_IDENTIFICATION_FUNCTION_CODE = 43;
 var LENGTH_UNKNOWN = "unknown";
